@@ -63,3 +63,9 @@ When deployed on a platform like Render, you must replace "http://localhost:5000
 - You can access the live Book Library app here:
   [ https://books-api-h6um.onrender.com ]
 
+✅ Test Coverage Report
+
+Here's the code coverage achieved for the API server using `pytest` and `pytest-cov`.
+
+"![Test Coverage Screenshot](coverage.png)"
+
