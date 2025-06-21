@@ -15,7 +15,7 @@
 Backend: Python + Flask
 ORM: Flask-SQLAlchemy
 Database: SQLite
-Testing: Postman
+Testing: Postman, pytest / pytest-cov
 
 # API DOCUMENTATION:
 
@@ -38,7 +38,7 @@ There are five main API endpoints:
   "genre": "Dystopian"
 }
 
-# Running the Server Locally:
+# Running the Server Locally & Testing
 
 * creating virtual environment
 python -m venv venv
@@ -58,6 +58,10 @@ python app.py
 All endpoints return data in JSON format. To test these APIs, users can either use tools like Postman, curl commands in a terminal, or the included HTML frontend (index.html) which interacts with the API through JavaScript.
 
 When deployed on a platform like Render, you must replace "http://localhost:5000" with your deployed site URL e.g., any "site url you will host it on" , i used render specifically. not changing the url will result in incorrect result as the frontend will not interact with the API as you want due to difference in the addresses.
+
+🧪 Running Tests:
+Run the following command to execute tests and view coverage:
+(pytest --cov=app --cov-report=term-missing)
 
 🚀 # Live Demo:
 - You can access the live Book Library app here:
